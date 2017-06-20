@@ -1,0 +1,7 @@
+﻿<span class="input-group-btn">
+        <div class="btn btn-default image-preview-input pull-right">
+            <span class="glyphicon glyphicon-folder-open"></span> <span class="image-preview-input-title"> Wybierz plik </span>
+            <input type="file" accept="application/pdf" name="input-file-preview" multiple="multiple" (change)="onChange($event)" />
+        </div>
+</span>
+<file-list [PdfFiles]="PdfFiles"></file-list>

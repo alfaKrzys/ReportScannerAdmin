@@ -1,0 +1,20 @@
+﻿<div class="list-group">
+    <ul class="list-group-header">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-xs-6 text-left">Nazwa</div>
+                <div class="col-xs-3">Rozmiar</div>
+                <div class="col-xs-3">Zmodyfikowano</div>
+            </div>
+        </li>
+    </ul>
+    <ul class="list-group-body">
+        <li *ngFor="let file of PdfFiles" class="list-group-item">
+            <div class="row">
+                <div class="col-xs-6 text-left"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> {{file.name}}</div>
+                <div class="col-xs-3">{{file.size}}</div>
+                <div class="col-xs-3">{{file.lastModifiedDate | date: "dd/MM/yyyy hh:mm:ss"}}</div>
+            </div>
+        </li>
+    </ul>
+</div>
